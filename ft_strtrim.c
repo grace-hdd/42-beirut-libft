@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -45,7 +44,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trimmed = (char *)malloc(sizeof(char) * (len + 1));
 	if (!trimmed)
 		return (NULL);
-	memcpy(trimmed, s1 + start, len);
+	ft_memcpy(trimmed, s1 + start, len);
 	trimmed[len] = '\0';
 	return (trimmed);
 }
